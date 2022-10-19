@@ -7,7 +7,7 @@ set -e
 
 # This script builds the binaries and sets up the docker image
 
-mkdir bin
+mkdir -p bin
 pushd bin
 CGO_ENABLED=0 GOOS=linux go build github.com/Microsoft/confidential-sidecar-containers/cmd/skr
 popd

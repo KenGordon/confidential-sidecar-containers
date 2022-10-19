@@ -7,7 +7,7 @@ set -e
 
 # This script builds the encrypted filesystem container
 
-mkdir bin
+mkdir -p bin
 pushd bin
 echo building azmount
 CGO_ENABLED=0 GOOS=linux go build github.com/Microsoft/confidential-sidecar-containers/cmd/azmount
